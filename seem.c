@@ -9,7 +9,7 @@
 #include <fcntl.h>
 
 sem_t a,b;
-void *fun1(void *arg)
+void *fun1(void *arg)/* read the file */
 {
 	char buf[128];
 	int fd;
@@ -23,13 +23,13 @@ void *fun1(void *arg)
 	while(1)
 	{
 		sem_wait(&a);
-		n = read(0,buf,sizeof(buf));
-		write(fd,buf,n);
-		sem_post(&b);
+		n = read(0,buf,sizeof(buf));//read info from the current window 
+		write(fd,buf,n);           // write into 1.txt file  
+		sem_post(&b);              //start other pthread to rand info from the line and print to current window   
 	}
 }
 
-void *fun2(void *arg)
+void *fun2(void *arg)/* write the file */
 {
 	char buf[128];
 	int fd;
@@ -53,6 +53,7 @@ int main(int argc, const char *argv[])
 {
 	int ret;
 	pthread_t tid[2];
+    /*  init seem  */
 	sem_init(&a,0,1);
 	sem_init(&b,0,0);
 	ret = pthread_create(&tid[0],NULL,fun1,(void *)argv[1]);

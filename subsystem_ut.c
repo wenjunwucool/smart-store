@@ -190,7 +190,10 @@ test_spdk_nvmf_tgt_listen(void)
 	listen_addr = spdk_nvmf_tgt_listen(trname1, traddr1, trsvcid1);
 	SPDK_CU_ASSERT_FATAL(listen_addr != NULL);
 	spdk_nvmf_listen_addr_cleanup(listen_addr);
+<<<<<<< HEAD
     free(listen_addr);
+=======
+>>>>>>> 94fd363c166198a3f348283d01c46608f250798d
 
 	/* listen addr is not create and valid trname */
 	const char *trname2  = "test_transport1";

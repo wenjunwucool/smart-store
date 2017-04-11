@@ -51,25 +51,8 @@ struct spdk_nvmf_tgt g_nvmf_tgt;
 
 struct spdk_nvmf_listen_addr *
 spdk_nvmf_listen_addr_create(const char *trname, const char *traddr, const char *trsvcid)
-{   
-    if(trname == NULL)
-    {
-        SPDK_ERRLOG("trname can't be NULL");
-        return NULL;
-    }
+{
 
-    if(trname == NULL)
-    {
-        SPDK_ERRLOG("traddr can't be NULL");
-        return NULL;
-    }
-
-    if(trname == NULL)
-    {
-        SPDK_ERRLOG("trsvcid can't be NULL");
-        return NULL;
-    }
-    
 	struct spdk_nvmf_listen_addr *listen_addr;
 
 	listen_addr = calloc(1, sizeof(*listen_addr));
@@ -108,7 +91,7 @@ spdk_nvmf_listen_addr_destroy(struct spdk_nvmf_listen_addr *addr)
 	free(addr->trsvcid);
 	free(addr->traddr);
 	free(addr);
-} 
+}
 
 void
 spdk_nvmf_listen_addr_cleanup(struct spdk_nvmf_listen_addr *addr)
@@ -179,75 +162,46 @@ spdk_bdev_claim(struct spdk_bdev *bdev, spdk_bdev_remove_cb_t remove_cb,
 {
 	return true;
 }
+
 static void
-test_spdk_nvmf_subsystem_exists(void)
-{
-    struct spdk_nvmf_subsystem subsystem = {};
-    //struct spdk_nvmf_subsystem *subsystem ;
-
-    //struct nvmf_subsystem *subsystem;
-    /* subnqn is NULL */
-    const char *nqn = NULL;
-    CU_ASSERT_FALSE(spdk_nvmf_subsystem_exists(nqn));
-
-    /* Not exists subnqn */
-	char subnqn[256];
-    strncpy(subnqn,"nqn.2016-06.io.spdk:subsystem1",sizeof(subnqn));
-    CU_ASSERT_FALSE(spdk_nvmf_subsystem_exists(subnqn));
-
-    /* Exists subnqn */
-    strcpy(subsystem.subnqn,subnqn);
-    //CU_ASSERT(strcmp(subsystem->subnqn,subnqn)==0);
-    CU_ASSERT_TRUE(spdk_nvmf_subsystem_exists(subnqn));
-
-}
-
-static void 
 test_spdk_nvmf_tgt_listen(void)
 {
-    struct spdk_nvmf_listen_addr *listen_addr;
-    const struct spdk_nvmf_transport *transport;
-    int rc;
-    const char *trname = "test_transport1";
-    const char *traddr = "192.168.100.1";
-    const char *trsvcid = "4420";
-    listen_addr = spdk_nvmf_tgt_listen(trname,traddr,trsvcid);
-    CU_ASSERT(listen_addr != NULL);
-    CU_ASSERT_PTR_EQUAL(listen_addr,spdk_nvmf_tgt_listen(trname,traddr,trsvcid));
+	struct spdk_nvmf_listen_addr *listen_addr;
 
-	//CU_ASSERT_PTR_NULL(spdk_nvmf_tgt_listen(trname,traddr,trsvcid));
-    /* listern addr is already create */
-    strcpy(listen_addr->trname,trname);
-    strcpy(listen_addr->traddr,traddr);
-    strcpy(listen_addr->trsvcid,trsvcid);
-    listen_addr = spdk_nvmf_tgt_listen(trname,traddr,trsvcid);
-    SPDK_CU_ASSERT_FATAL(listen_addr != NULL);
-    CU_ASSERT_PTR_EQUAL(listen_addr,spdk_nvmf_tgt_listen(trname,traddr,trsvcid));
+	/* listen addr is not create and invalid trname */
+	const char *trname  = "RDMA RDMA";
+	const char *traddr  = "192.168.100.1";
+	const char *trsvcid = "4420";
+	listen_addr = spdk_nvmf_tgt_listen(trname, traddr, trsvcid);
+	CU_ASSERT_PTR_NULL(listen_addr);
+	spdk_nvmf_listen_addr_cleanup(listen_addr);
 
-    /* listen addr is not create and tename is invalid*/
-    const char *trname1  = "test_transport1";
-    const char *traddr1  = "192.168.100.1";
-    const char *trsvcid1 = "4420";
-    listen_addr = spdk_nvmf_tgt_listen(trname1,traddr1,trsvcid1);
-    //CU_ASSERT_PTR_NOT_NULL(listen_addr);
-    SPDK_CU_ASSERT_FATAL(listen_addr != NULL);
-    
-    /*listen addr is not create and traddr is NULL*/
-    const char *trname2  = "test_transport1";
-    const char *traddr2  = "192.168.3.11";
-    const char *trsvcid2 = "4420";
-    listen_addr = spdk_nvmf_tgt_listen(trname2,traddr2,trsvcid2);
-    CU_ASSERT_PTR_NOT_NULL(listen_addr);
+	/* The correct address has been created */
+	const char *trname1 = "test_transport1";
+	const char *traddr1 = "192.168.100.1";
+	const char *trsvcid1 = "4420";
+	listen_addr = (struct spdk_nvmf_listen_addr *)malloc(sizeof(struct spdk_nvmf_listen_addr));
+	listen_addr->trname = (char *)malloc(sizeof(char));
+	listen_addr->traddr = (char *)malloc(sizeof(char));
+	listen_addr->trsvcid = (char *)malloc(sizeof(char));
+	listen_addr->trname = strdup(trname1);
+	listen_addr->traddr = strdup(traddr1);
+	listen_addr->trsvcid = strdup(trsvcid1);
+	listen_addr = spdk_nvmf_tgt_listen(trname1, traddr1, trsvcid1);
+	SPDK_CU_ASSERT_FATAL(listen_addr != NULL);
+	spdk_nvmf_listen_addr_cleanup(listen_addr);
 
-    /*listen addr is not create and traddr is NULL*/
-    const char *trname3  = "test_transport1";
-    const char *traddr3  = "192.168.1.100";
-    const char *trsvcid3 = NULL;
-    listen_addr = spdk_nvmf_tgt_listen(trname3,traddr3,trsvcid3);
-    SPDK_CU_ASSERT_FATAL(listen_addr == NULL);
-    
-     
+	/* listen addr is not create and valid trname */
+	const char *trname2  = "test_transport1";
+	const char *traddr2  = "192.168.3.11";
+	const char *trsvcid2 = "3320";
+	listen_addr = spdk_nvmf_tgt_listen(trname2, traddr2, trsvcid2);
+	CU_ASSERT_PTR_NOT_NULL(listen_addr);
+	CU_ASSERT_STRING_EQUAL(listen_addr->traddr, traddr2);
+	CU_ASSERT_STRING_EQUAL(listen_addr->trsvcid, trsvcid2);
+
 }
+
 static void
 nvmf_test_create_subsystem(void)
 {
@@ -306,11 +260,9 @@ int main(int argc, char **argv)
 	}
 
 	if (
-		CU_add_test(suite, "subsystem_exists", test_spdk_nvmf_subsystem_exists) == NULL || 
 		CU_add_test(suite, "create_subsystem", nvmf_test_create_subsystem) == NULL ||
 		CU_add_test(suite, "find_subsystem", nvmf_test_find_subsystem) == NULL ||
-		CU_add_test(suite, "test_spdk_nvmf_tgt_listen", test_spdk_nvmf_tgt_listen) == NULL)
-    {
+		CU_add_test(suite, "test_spdk_nvmf_tgt_listen", test_spdk_nvmf_tgt_listen) == NULL) {
 		CU_cleanup_registry();
 		return CU_get_error();
 	}

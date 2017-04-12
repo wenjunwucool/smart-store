@@ -87,15 +87,21 @@ spdk_nvmf_listen_addr_create(const char *trname, const char *traddr, const char 
 void
 spdk_nvmf_listen_addr_destroy(struct spdk_nvmf_listen_addr *addr)
 {
-	free(addr->trname);
-	free(addr->trsvcid);
-	free(addr->traddr);
-	free(addr);
+	const struct spdk_nvmf_transport *transport;
+	transport = spdk_nvmf_transport_get(addr->trname);
+	assert(transport != NULL);
+	transport->listen_addr_remove(addr);
+
+	spdk_nvmf_listen_addr_cleanup(addr);
 }
 
 void
 spdk_nvmf_listen_addr_cleanup(struct spdk_nvmf_listen_addr *addr)
 {
+	free(addr->trname);
+	free(addr->trsvcid);
+	free(addr->traddr);
+	free(addr);
 	return;
 }
 
@@ -120,7 +126,7 @@ static const struct spdk_nvmf_transport test_transport1 = {
 const struct spdk_nvmf_transport *
 spdk_nvmf_transport_get(const char *trname)
 {
-	if (!strcasecmp(trname, "test_transport1")) {
+	if (!strcasecmp(trname, "RDMA")) {
 		return &test_transport1;
 	}
 
@@ -166,44 +172,37 @@ spdk_bdev_claim(struct spdk_bdev *bdev, spdk_bdev_remove_cb_t remove_cb,
 static void
 test_spdk_nvmf_tgt_listen(void)
 {
-	struct spdk_nvmf_listen_addr *listen_addr;
+	struct spdk_nvmf_listen_addr *listen_addr, *listen_addr1;
 
 	/* listen addr is not create and invalid trname */
-	const char *trname  = "RDMA RDMA";
+	const char *trname  = "RDMA";
 	const char *traddr  = "192.168.100.1";
 	const char *trsvcid = "4420";
-	listen_addr = spdk_nvmf_tgt_listen(trname, traddr, trsvcid);
-	CU_ASSERT_PTR_NULL(listen_addr);
-	spdk_nvmf_listen_addr_cleanup(listen_addr);
+	CU_ASSERT(spdk_nvmf_tgt_listen(trname, traddr, trsvcid) != NULL);
 
-	/* The correct address has been created */
-	const char *trname1 = "test_transport1";
-	const char *traddr1 = "192.168.100.1";
-	const char *trsvcid1 = "4420";
-	listen_addr = (struct spdk_nvmf_listen_addr *)malloc(sizeof(struct spdk_nvmf_listen_addr));
-	listen_addr->trname = (char *)malloc(sizeof(char));
-	listen_addr->traddr = (char *)malloc(sizeof(char));
-	listen_addr->trsvcid = (char *)malloc(sizeof(char));
-	listen_addr->trname = strdup(trname1);
-	listen_addr->traddr = strdup(traddr1);
-	listen_addr->trsvcid = strdup(trsvcid1);
-	listen_addr = spdk_nvmf_tgt_listen(trname1, traddr1, trsvcid1);
-	SPDK_CU_ASSERT_FATAL(listen_addr != NULL);
-	spdk_nvmf_listen_addr_cleanup(listen_addr);
-<<<<<<< HEAD
-    free(listen_addr);
-=======
->>>>>>> 94fd363c166198a3f348283d01c46608f250798d
+	/* The correct listen addr has been created */
+	//trname = "RDMA";
+	//traddr = "192.168.100.1";
+    //trsvcid = "4420";
+	listen_addr = (struct spdk_nvmf_listen_addr *)calloc(1, sizeof(struct spdk_nvmf_listen_addr));
+    strncpy(listen_addr->trname, trname,strlen(trname));
+	strncpy(listen_addr->traddr, traddr,strlen(traddr));
+	strncpy(listen_addr->trsvcid, trsvcid,strlen(trsvcid));
+	listen_addr1 = spdk_nvmf_tgt_listen(listen_addr->trname, listen_addr->traddr, listen_addr->trsvcid);
+	CU_ASSERT_PTR_NOT_NULL(listen_addr1);
+    //free(listen_addr);
+	spdk_nvmf_listen_addr_cleanup(listen_addr1);
 
 	/* listen addr is not create and valid trname */
-	const char *trname2  = "test_transport1";
-	const char *traddr2  = "192.168.3.11";
-	const char *trsvcid2 = "3320";
-	listen_addr = spdk_nvmf_tgt_listen(trname2, traddr2, trsvcid2);
-	CU_ASSERT_PTR_NOT_NULL(listen_addr);
-	CU_ASSERT_STRING_EQUAL(listen_addr->traddr, traddr2);
-	CU_ASSERT_STRING_EQUAL(listen_addr->trsvcid, trsvcid2);
-
+	//trname  = "RDMA";
+	//traddr  = "192.168.3.11";
+	//trsvcid = "3320";
+	listen_addr = (struct spdk_nvmf_listen_addr *)calloc(1, sizeof(struct spdk_nvmf_listen_addr));
+	CU_ASSERT_PTR_NOT_NULL(spdk_nvmf_tgt_listen(trname, traddr, trsvcid));
+	listen_addr = spdk_nvmf_tgt_listen(trname, traddr, trsvcid);
+	CU_ASSERT_STRING_EQUAL(listen_addr->traddr, traddr);
+	CU_ASSERT_STRING_EQUAL(listen_addr->trsvcid, trsvcid);
+	spdk_nvmf_listen_addr_cleanup(listen_addr);
 }
 
 static void

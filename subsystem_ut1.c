@@ -186,7 +186,7 @@ test_spdk_nvmf_subsystem_exists(void)
     //struct spdk_nvmf_subsystem *subsystem ;
 
     //struct nvmf_subsystem *subsystem;
-    /* subnqn is NULL */
+    /* Subnqn is NULL */
     const char *nqn = NULL;
     CU_ASSERT_FALSE(spdk_nvmf_subsystem_exists(nqn));
 

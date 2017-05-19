@@ -36,7 +36,7 @@
 #include "spdk_cunit.h"
 
 #include "direct.c"
-
+#include "../../../../lib/nvme/nvme_internal.h" 
 SPDK_LOG_REGISTER_TRACE_FLAG("nvmf", SPDK_TRACE_NVMF)
 
 uint32_t
@@ -191,7 +191,7 @@ spdk_nvmf_session_set_features_async_event_configuration(struct spdk_nvmf_reques
 }
 
 int
-spdk_nvmf_session_get_features_async_event_configuuration(struct spdk_nvmf_request *req)
+spdk_nvmf_session_get_features_async_event_configuration(struct spdk_nvmf_request *req)
 {
 	return -1;
 }
@@ -209,17 +209,40 @@ nvmf_test_nvmf_direct_ctrlr_admin_identify_nslist(void)
 }
 
 static void 
-test_nvmf_direct_ctrlr_get_data(void)
+test_nvmf_direct_ctrlr_admin_identify_nslist(void)
 {
+    
+    int ret;
+	union nvmf_h2c_msg { 
+	    struct spdk_nvmf_capsule_cmd			nvmf_cmd;
+	    struct spdk_nvme_cmd		        nvme_cmd;
+	    struct spdk_nvmf_fabric_prop_set_cmd		prop_set_cmd;
+	    struct spdk_nvmf_fabric_prop_get_cmd		prop_get_cmd;
+	    struct spdk_nvmf_fabric_connect_cmd		connect_cmd;
+    }cmd;
+    struct spdk_nvme_ctrlr *ctrlr;
+    ctrlr = (struct spdk_nvme_ctrlr *)malloc(sizeof(struct spdk_nvme_ctrlr));
+    struct spdk_nvmf_request *req;
+    req = (struct spdk_nvmf_request *)malloc(sizeof(struct spdk_nvmf_request));
+    req->cmd = &cmd;
+    (&req->cmd->nvme_cmd)->nsid = 0xfffffffeUL;
+    ret = nvmf_direct_ctrlr_admin_identify_nslist(ctrlr,req);
+    CU_ASSERT(ret == -1);
 
-//	struct spdk_nvme_ctrlr_data	cdata = {};
-	struct spdk_nvme_ctrlr *ctrlr;
-    struct spdk_nvmf_session *session;
-    struct spdk_nvmf_session nvmf_session;
-    session->subsys->dev.direct.ctrlr = &ctrlr;    
-    session = &nvmf_session;    
-    nvmf_direct_ctrlr_get_data(session);
-//  CU_ASSERT_PTR_EQUAL(cdata == ctrlr);
+    (&req->cmd->nvme_cmd)->nsid = 0xfffffffdUL;
+    ret = nvmf_direct_ctrlr_admin_identify_nslist(ctrlr,req);
+    CU_ASSERT(ret == 0);
+
+    (&req->cmd->nvme_cmd)->nsid = 0xfffffffdUL;
+    ctrlr->num_ns = 1;
+    ret = nvmf_direct_ctrlr_admin_identify_nslist(ctrlr,req);
+    CU_ASSERT(ret == 0);
+    CU_ASSERT(((struct spdk_nvme_ns_list *)req->data)->ns_list[0] == 1);
+    /* num_ns <= req_ns_id */     
+
+
+    free(ctrlr);
+    free(req);
 }
 
 int main(int argc, char **argv)
@@ -237,8 +260,8 @@ int main(int argc, char **argv)
 		return CU_get_error();
 	}
 
-	if (CU_add_test(suite, "direct_ctrlr_admin_identify_nslist",nvmf_test_nvmf_direct_ctrlr_admin_identify_nslist) == NULL || 
-		CU_add_test(suite, "nvmf_direct_ctrlr_get_data", test_nvmf_direct_ctrlr_get_data) == NULL) 
+	if (CU_add_test(suite, "direct_ctrlr_admin_identify_nslist", nvmf_test_nvmf_direct_ctrlr_admin_identify_nslist) == NULL ||
+		CU_add_test(suite, "nvmf_direct_ctrlr_admin_identify_nslist", test_nvmf_direct_ctrlr_admin_identify_nslist) == NULL ) 
     {
 		CU_cleanup_registry();
 		return CU_get_error();

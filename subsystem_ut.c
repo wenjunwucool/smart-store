@@ -31,10 +31,7 @@
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <errno.h>
-#include <stdio.h>
+#include "spdk/stdinc.h"
 
 #include "spdk_cunit.h"
 #include "subsystem.h"
@@ -52,7 +49,6 @@ struct spdk_nvmf_tgt g_nvmf_tgt;
 struct spdk_nvmf_listen_addr *
 spdk_nvmf_listen_addr_create(const char *trname, const char *traddr, const char *trsvcid)
 {
-
 	struct spdk_nvmf_listen_addr *listen_addr;
 
 	listen_addr = calloc(1, sizeof(*listen_addr));
@@ -87,21 +83,15 @@ spdk_nvmf_listen_addr_create(const char *trname, const char *traddr, const char 
 void
 spdk_nvmf_listen_addr_destroy(struct spdk_nvmf_listen_addr *addr)
 {
-	const struct spdk_nvmf_transport *transport;
-	transport = spdk_nvmf_transport_get(addr->trname);
-	assert(transport != NULL);
-	transport->listen_addr_remove(addr);
-
-	spdk_nvmf_listen_addr_cleanup(addr);
+	free(addr->trname);
+	free(addr->trsvcid);
+	free(addr->traddr);
+	free(addr);
 }
 
 void
 spdk_nvmf_listen_addr_cleanup(struct spdk_nvmf_listen_addr *addr)
 {
-	free(addr->trname);
-	free(addr->trsvcid);
-	free(addr->traddr);
-	free(addr);
 	return;
 }
 
@@ -126,7 +116,7 @@ static const struct spdk_nvmf_transport test_transport1 = {
 const struct spdk_nvmf_transport *
 spdk_nvmf_transport_get(const char *trname)
 {
-	if (!strcasecmp(trname, "RDMA")) {
+	if (!strcasecmp(trname, "test_transport1")) {
 		return &test_transport1;
 	}
 
@@ -169,40 +159,46 @@ spdk_bdev_claim(struct spdk_bdev *bdev, spdk_bdev_remove_cb_t remove_cb,
 	return true;
 }
 
+static bool conn_is_idle_false(struct spdk_nvmf_conn *conn)
+{
+    return false;
+}
+
 static void
 test_spdk_nvmf_tgt_listen(void)
 {
-	struct spdk_nvmf_listen_addr *listen_addr, *listen_addr1;
+	struct spdk_nvmf_listen_addr *listen_addr;
 
-	/* listen addr is not create and invalid trname */
-	const char *trname  = "RDMA";
+	/* Invalid trname */
+	const char *trname  = "test_invalid_trname";
 	const char *traddr  = "192.168.100.1";
 	const char *trsvcid = "4420";
-	CU_ASSERT(spdk_nvmf_tgt_listen(trname, traddr, trsvcid) != NULL);
+	CU_ASSERT(spdk_nvmf_tgt_listen(trname, traddr, trsvcid) == NULL);
 
-	/* The correct listen addr has been created */
-	//trname = "RDMA";
-	//traddr = "192.168.100.1";
-    //trsvcid = "4420";
-	listen_addr = (struct spdk_nvmf_listen_addr *)calloc(1, sizeof(struct spdk_nvmf_listen_addr));
-    strncpy(listen_addr->trname, trname,strlen(trname));
-	strncpy(listen_addr->traddr, traddr,strlen(traddr));
-	strncpy(listen_addr->trsvcid, trsvcid,strlen(trsvcid));
-	listen_addr1 = spdk_nvmf_tgt_listen(listen_addr->trname, listen_addr->traddr, listen_addr->trsvcid);
-	CU_ASSERT_PTR_NOT_NULL(listen_addr1);
-    //free(listen_addr);
-	spdk_nvmf_listen_addr_cleanup(listen_addr1);
-
-	/* listen addr is not create and valid trname */
-	//trname  = "RDMA";
-	//traddr  = "192.168.3.11";
-	//trsvcid = "3320";
-	listen_addr = (struct spdk_nvmf_listen_addr *)calloc(1, sizeof(struct spdk_nvmf_listen_addr));
-	CU_ASSERT_PTR_NOT_NULL(spdk_nvmf_tgt_listen(trname, traddr, trsvcid));
+	/* Listen addr is not create and create valid listen addr */
+	trname  = "test_transport1";
+	traddr  = "192.168.3.11";
+	trsvcid = "3320";
 	listen_addr = spdk_nvmf_tgt_listen(trname, traddr, trsvcid);
-	CU_ASSERT_STRING_EQUAL(listen_addr->traddr, traddr);
-	CU_ASSERT_STRING_EQUAL(listen_addr->trsvcid, trsvcid);
-	spdk_nvmf_listen_addr_cleanup(listen_addr);
+	SPDK_CU_ASSERT_FATAL(listen_addr != NULL);
+	CU_ASSERT(listen_addr->traddr != NULL);
+	CU_ASSERT(listen_addr->trsvcid != NULL);
+	spdk_nvmf_listen_addr_destroy(listen_addr);
+
+}
+
+static void
+test_spdk_nvmf_subsystem_add_ns(void)
+{
+	struct spdk_nvmf_subsystem subsystem = {
+		.mode = NVMF_SUBSYSTEM_MODE_VIRTUAL,
+		.dev.virt.ns_count = 0,
+		.dev.virt.ns_list = {},
+	};
+	struct spdk_bdev bdev = {};
+	spdk_nvmf_subsystem_add_ns(&subsystem, &bdev);
+	CU_ASSERT(subsystem.dev.virt.ns_count == 1);
+	CU_ASSERT_PTR_EQUAL(subsystem.dev.virt.ns_list[0], &bdev);
 }
 
 static void
@@ -239,6 +235,59 @@ nvmf_test_create_subsystem(void)
 					       NVMF_SUBSYSTEM_MODE_DIRECT, NULL, NULL, NULL);
 	CU_ASSERT(subsystem == NULL);
 }
+static void 
+test_nvmf_subsystem_removable(void)
+{
+    bool ret;
+	TAILQ_HEAD(, spdk_nvmf_session)		sessions;
+	TAILQ_HEAD(connection_q, spdk_nvmf_conn) connections;
+    struct spdk_nvmf_subsystem subsystem = 
+    {
+        .is_removed = false,              
+    };
+    ret = nvmf_subsystem_removable(&subsystem);
+    CU_ASSERT(ret == false);
+    (&subsystem)->sessions->thq_frist->connections->thq_frist->transport->conn_is_idle = conn_is_idle_false;
+    
+    
+}
+
+static void 
+test_spdk_nvmf_subsystem_add_host(void)
+{
+    int ret;
+    struct spdk_nvmf_subsystem subsystem ={
+        .num_hosts =0,
+        
+    };
+    g_nvmf_tgt.discovery_genctr = 0;
+    /* test invalid hsot_nqn */   
+    const char *host_nqn = "test_invalid_host_nqn";
+    ret = spdk_nvmf_subsystem_add_host(&subsystem,host_nqn);
+    CU_ASSERT(ret == -1);
+    CU_ASSERT(subsystem.num_hosts == 1);
+    CU_ASSERT(g_nvmf_tgt.discovery_genctr == 1);
+    
+}
+
+static void 
+test_spdk_nvmf_subsystem_listener_allowed(void)
+{
+    bool ret;
+    TAILQ_HEAD(,spdk_nvmf_subsystem_allowed_listener) 
+	TAILQ_HEAD(, spdk_nvmf_subsystem_allowed_listener)	allowed_listeners;
+    struct spdk_nvmf_subsystem subsystem ={};
+    struct spdk_nvmf_listen_addr listen_addr ={};
+    ret = spdk_nvmf_subsystem_listener_allowed(&subsystem,&listen_addr);
+    CU_ASSERT(ret == true);
+    subsystem.allowed_listeners = {};
+    ret = spdk_nvmf_subsystem_listener_allowed(&subsystem,&listen_addr);
+    CU_ASSERT(ret == true);
+    subsystem.allowed_listeners = listen_addr;
+    ret = spdk_nvmf_subsystem_listener_allowed(&subsystem,&listen_addr);
+
+}
+
 
 static void
 nvmf_test_find_subsystem(void)
@@ -264,8 +313,12 @@ int main(int argc, char **argv)
 
 	if (
 		CU_add_test(suite, "create_subsystem", nvmf_test_create_subsystem) == NULL ||
-		CU_add_test(suite, "find_subsystem", nvmf_test_find_subsystem) == NULL ||
-		CU_add_test(suite, "test_spdk_nvmf_tgt_listen", test_spdk_nvmf_tgt_listen) == NULL) {
+		CU_add_test(suite, "nvmf_tgt_listen", test_spdk_nvmf_tgt_listen) == NULL ||
+		CU_add_test(suite, "nvmf_subsystem_add_ns", test_spdk_nvmf_subsystem_add_ns) == NULL ||
+		CU_add_test(suite, "nvmf_subsystem_removable", test_nvmf_subsystem_removable) == NULL ||
+		CU_add_test(suite, "spdk_nvmf_subsystem_add_host", test_spdk_nvmf_subsystem_add_host) == NULL ||
+		CU_add_test(suite, "spdk_nvmf_subsystem_listener_allowed", test_spdk_nvmf_subsystem_listener_allowed) == NULL ||
+		CU_add_test(suite, "find_subsystem", nvmf_test_find_subsystem) == NULL) {
 		CU_cleanup_registry();
 		return CU_get_error();
 	}

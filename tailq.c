@@ -36,7 +36,7 @@ int main(int argc, const char *argv[])
     tmp_item=TAILQ_NEXT(tmp_item,entries);  
     printf("next element is %d\n",tmp_item->value);
     TAILQ_FOREACH(ins_item,&queue_head,entries){
-        printf("%s\n",ins_item->value);
+        printf("%s*******\n",ins_item->value);
     }
     return 0;
 

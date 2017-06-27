@@ -11,19 +11,7 @@ SERVER = 'http://10.239.173.71'
 from subprocess import call,check_call
 username = 'admin'
 password = '1'
-read_iops=Total_iops_list[0:8]
-max_read_iops=max(read_iops)
-max_write_iops=max(write_iops)
-max_rw_iops=max(rw_iops)
-max_randread_iops=max(randread_iops)
-max_randwrite_iops=max(randwrite_iops)
-max_randrw_iops=max(randrw_iops)
-max_read_lat=max(read_lat)
-max_write_lat=max(write_lat)
-max_rw_lat=max(rw_lat)
-max_randread_lat=max(randread_lat)
-max_randwrite_lat=max(randwrite_lat)
-max_randrw_lat=max(randrw_lat)
+
 
 def new_spdk_trend_result(result_id,iops,latency,testexecution,create_time,rw_method,queue_depth,io_size):
     url='{server_add}/api/{project}/spdk_trend_result/1/'.format(server_add=SERVER,project='spdk') 
@@ -64,6 +52,32 @@ def get_rw_id(argv_method):
 
 def draw_spdk_nvmf_target_trend_result():
     create_time=time.strftime('%Y-%m-%d %x',time.localtime())
+    get_result_from_fio_log()
+    read_iops=Total_iops_list[0:8]
+    write_iops=Total_iops_list[8:16]
+    rw_iops=Total_iops_list[32:40]
+    randread_iops=Total_iops_list[16:24]
+    randwrite_iops=Total_iops_list[24:32]
+    randrw_iops=Total_iops_list[40:48]
+
+    read_lat=Total_lat_list[0:8]
+    write_lat=Total_lat_list[8:16]
+    rw_lat=Total_lat_list[32:40]
+    randread_lat=Total_lat_list[16:24]
+    randwrite_lat=Total_lat_list[24:32]
+    randrw_lat=Total_lat_list[40:48]
+    max_read_iops=max(read_iops)
+    max_write_iops=max(write_iops)
+    max_rw_iops=max(rw_iops)
+    max_randread_iops=max(randread_iops)
+    max_randwrite_iops=max(randwrite_iops)
+    max_randrw_iops=max(randrw_iops)
+    max_read_lat=max(read_lat)
+    max_write_lat=max(write_lat)
+    max_rw_lat=max(rw_lat)
+    max_randread_lat=max(randread_lat)
+    max_randwrite_lat=max(randwrite_lat)
+    max_randrw_lat=max(randrw_lat)
     new_spdk_trend_result('',max_randread_iops,max_randread_lat,1,create_time,1,1,1)
     #new_spdk_trend_result('',max_read_iops,max_read_lat,1,create_time,1,1,1)
     new_spdk_trend_result('',max_write_iops,max_write_lat,1,create_time,2,1,1)
@@ -75,6 +89,32 @@ def draw_spdk_nvmf_target_trend_result():
 
 def draw_vhost_scsi_trend_result():
     create_time=time.strftime('%Y-%m-%d %x',time.localtime())
+    get_result_from_fio_log()
+    read_iops=Total_iops_list[0:8]
+    write_iops=Total_iops_list[8:16]
+    rw_iops=Total_iops_list[32:40]
+    randread_iops=Total_iops_list[16:24]
+    randwrite_iops=Total_iops_list[24:32]
+    randrw_iops=Total_iops_list[40:48]
+
+    read_lat=Total_lat_list[0:8]
+    write_lat=Total_lat_list[8:16]
+    rw_lat=Total_lat_list[32:40]
+    randread_lat=Total_lat_list[16:24]
+    randwrite_lat=Total_lat_list[24:32]
+    randrw_lat=Total_lat_list[40:48]
+    max_read_iops=max(read_iops)
+    max_write_iops=max(write_iops)
+    max_rw_iops=max(rw_iops)
+    max_randread_iops=max(randread_iops)
+    max_randwrite_iops=max(randwrite_iops)
+    max_randrw_iops=max(randrw_iops)
+    max_read_lat=max(read_lat)
+    max_write_lat=max(write_lat)
+    max_rw_lat=max(rw_lat)
+    max_randread_lat=max(randread_lat)
+    max_randwrite_lat=max(randwrite_lat)
+    max_randrw_lat=max(randrw_lat)
     new_vhost_scsi_trend_result('',max_randread_iops,max_randread_lat,1,create_time,1,1,1)
     #new_vhost_scsi_trend_result('',max_read_iops,max_read_lat,1,create_time,1,1,1)
     new_vhost_scsi_trend_result('',max_write_iops,max_write_lat,1,create_time,2,1,1)

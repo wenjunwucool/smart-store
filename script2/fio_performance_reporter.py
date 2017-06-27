@@ -175,8 +175,8 @@ def get_result_from_fio_log():
         Total_iops_list.append(iops)
         Total_lat_list.append(latency)
     f.close()
-    global read_iops,write_iops,rw_iops,randread_iops,randwrite_iops,randrw_iops
-    global read_lat,write_lat,rw_lat,randread_lat,randwrite_lat,randrw_lat
+    #global read_iops,write_iops,rw_iops,randread_iops,randwrite_iops,randrw_iops
+    #global read_lat,write_lat,rw_lat,randread_lat,randwrite_lat,randrw_lat
     print Total_iops_list
     print Total_lat_list
     read_iops=Total_iops_list[0:8]
@@ -193,25 +193,37 @@ def get_result_from_fio_log():
     randwrite_lat=Total_lat_list[24:32]
     randrw_lat=Total_lat_list[40:48]
     print randrw_iops
-#the same queue_depth && diffient rw_method:
-#main()
-#get_result_from_fio_log()
-'''
-    #file_path = file_path
+
+def get_result_from_single_log_file():
+    if len(sys.argv) < 2:
+        print "You must imput a fio log file "
+        sys.exit()
+    if not os.path.isfile(sys.argv[3]):
+        print "The file does not exist!!!"
+        sys.exit()
+
+    iops = 0
+    latency = 0
+
+    file_path = sys.argv[3] 
     get_aggrb(file_path) 
+    #get_run_time(file_path) 
     get_iops(file_path)
     get_latency(file_path)
     get_cpu_usage(file_path)
-    #print "iops_set:      ", iops_set
-    #print "latency_set:   ", lat_set
-    #print "cpu_usage_set: ", cpu_usage_set
+    print "iops_set:      \n", iops_set
+    print "latency_set:   \n", lat_set
+    print "total_cpu_usage_set: \n", cpu_usage_set
     iops = compute_iops()
+    Total_iops=iops
     latency = compute_latency()
     cpu_usage = compute_cpu_usage()
-
+    
+    print"\n"
     print "Average rw_speed: ", aggrb
     print "Total_iops:       ",iops
     print "Average_latency:  ", latency
-    print "cpu usr usage:     %.2f%%" % cpu_usage[0]
-    print "cpu sys usage:     %.2f%%" % cpu_usage[1]
-'''
+    #print "run_time:  ", run_time
+    print "Total cpu usr usage:     %.2f%%" % cpu_usage[0]
+    print "Total cpu sys usage:     %.2f%%" % cpu_usage[1]
+    

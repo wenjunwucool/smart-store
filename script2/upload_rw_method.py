@@ -1,7 +1,7 @@
-from API1226 import *
+from API import *
 import time 
 from fio_performance_reporter import *
-def draw_randwrite_chart(read_iops,read_lat):
+def draw_randwrite_chart(randwrite_iops,randwrite_lat):
     
     #new_dpdk_testplan(plan_id,plan_name,rw_method_id,io_size_id,queue_size_id,owner,create_time,description,del_flag):
     exe_id = get_testexecution_list()
@@ -68,9 +68,9 @@ def draw_randread_chart(randread_iops,randread_lat):
     new_spdk_perf_result('',float(randread_iops[7]),float(randread_lat[7]),"case_type",exe_id+8,create_time,4,1,1)
 
 
-def draw_randrw_chart(rw_iops,rw_lat):
+def draw_randrw_chart(randrw_iops,randrw_lat):
     exe_id = get_testexecution_list()
-    print "XXXXXXXXXXXXXXXXX",randrw_iops,randrw_lat
+    #print "XXXXXXXXXXXXXXXXX",randrw_iops,randrw_lat
     create_time=time.strftime('%Y-%m-%d %x',time.localtime())
     new_dpdk_testplan('','nvmf-target',6,2,1,'wuwenzhong',create_time,"mvmf_tagret",0)
     plan_id = get_testplan_list()

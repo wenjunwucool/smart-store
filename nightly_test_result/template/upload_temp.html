@@ -1,0 +1,34 @@
+<html lang="en">
+<style>
+.submit{
+	color:#fff;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	padding:10px 15px;
+	padding-top: 10px;
+	padding-right:15px;
+	padding-bottom:10px;
+	padding-left: 15px;
+	border-bottom:1px solid transparent;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#337ab7;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+	<title>Nightly Test Result</title>
+</head>
+		<body>
+		<div class="submit">
+		<form action="/upload/" method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form }}
+		<input type="submit" value="提交"/>
+		</form>
+		</div>
+		</body>
+</html>
+

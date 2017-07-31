@@ -1,0 +1,745 @@
+randread_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid3914 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: No free hugepages reported in hugepages-2048kB
+EAL: FATAL: Cannot get hugepage information.
+EAL: Cannot get hugepage information.
+Failed to initialize DPDK
+randread_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid3915 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: No free hugepages reported in hugepages-2048kB
+EAL: FATAL: Cannot get hugepage information.
+EAL: Cannot get hugepage information.
+Failed to initialize DPDK
+randread_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid3916 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: No free hugepages reported in hugepages-2048kB
+EAL: FATAL: Cannot get hugepage information.
+EAL: Cannot get hugepage information.
+Failed to initialize DPDK
+randread_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid3917 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: No free hugepages reported in hugepages-2048kB
+EAL: FATAL: Cannot get hugepage information.
+EAL: Cannot get hugepage information.
+Failed to initialize DPDK
+randread_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid3918 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: No free hugepages reported in hugepages-2048kB
+EAL: FATAL: Cannot get hugepage information.
+EAL: Cannot get hugepage information.
+Failed to initialize DPDK
+randread_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid3919 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: No free hugepages reported in hugepages-2048kB
+EAL: FATAL: Cannot get hugepage information.
+EAL: Cannot get hugepage information.
+Failed to initialize DPDK
+randread_1qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randread_4qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randread_16qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randread_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5219 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:   13798.19      53.90      72.28      29.02    3381.03
+/dev/nvme10n1                               from core 6:   13708.11      53.55      72.74      29.01    3337.94
+/dev/nvme9n1                                from core 5:   13739.36      53.67      72.59      28.25    3235.77
+/dev/nvme8n1                                from core 4:   13790.87      53.87      72.31      29.14    3256.19
+/dev/nvme7n1                                from core 3:   12972.07      50.67      76.90      29.04    2917.21
+/dev/nvme6n1                                from core 2:   13788.23      53.86      72.33      29.07    3224.91
+/dev/nvme5n1                                from core 1:   13752.19      53.72      72.51      29.17    4378.56
+/dev/nvme4n1                                from core 0:   13657.39      53.35      73.02      29.53    3159.18
+========================================================
+Total                                                  :  109206.41     426.59      73.09      29.03    3361.35
+
+randread_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5425 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:   45974.58     179.59      86.81      24.87    3363.06
+/dev/nvme10n1                               from core 6:   45957.07     179.52      86.84      24.65    3352.39
+/dev/nvme9n1                                from core 5:   46185.97     180.41      86.41      24.46    3303.89
+/dev/nvme8n1                                from core 4:   45997.45     179.68      86.76      24.62    4689.95
+/dev/nvme7n1                                from core 3:   47919.21     187.18      83.28      24.14    2964.31
+/dev/nvme6n1                                from core 2:   45976.56     179.60      86.80      24.57    3338.69
+/dev/nvme5n1                                from core 1:   46105.93     180.10      86.57      24.73    5567.36
+/dev/nvme4n1                                from core 0:   46040.27     179.84      86.69      25.20   32896.39
+========================================================
+Total                                                  :  370157.06    1445.93      86.27      24.65    7434.51
+
+randread_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5559 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:  117588.93     459.33     135.82      27.12    4653.04
+/dev/nvme10n1                               from core 6:  120270.98     469.81     132.79      25.00    3450.55
+/dev/nvme9n1                                from core 5:  121482.17     474.54     131.47      25.60    3353.45
+/dev/nvme8n1                                from core 4:  120984.40     472.60     132.01      24.68    4134.29
+/dev/nvme7n1                                from core 3:  128193.38     500.76     124.57      26.06    5201.71
+/dev/nvme6n1                                from core 2:  122618.25     478.98     130.23      25.68    5021.52
+/dev/nvme5n1                                from core 1:  123761.72     483.44     129.04      25.60    3675.84
+/dev/nvme4n1                                from core 0:  122422.80     478.21     130.45      25.86    4524.85
+========================================================
+Total                                                  :  977322.69    3817.67     130.80      25.70    4251.91
+
+randread_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5711 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:   64338.67     251.32      15.31      11.71    8497.53
+/dev/nvme10n1                               from core 6:   63883.08     249.54      15.42      11.94    8711.18
+/dev/nvme9n1                                from core 5:   64758.07     252.96      15.20      11.31    8412.90
+/dev/nvme8n1                                from core 4:   64846.72     253.31      15.20      12.19    8777.70
+/dev/nvme7n1                                from core 3:   63944.58     249.78      15.43      11.97    8438.75
+/dev/nvme6n1                                from core 2:   66103.52     258.22      14.91      12.10    9792.60
+/dev/nvme5n1                                from core 1:   67224.98     262.60      14.65      11.77    8640.76
+/dev/nvme4n1                                from core 0:   66015.63     257.87      14.92      12.06    8627.29
+========================================================
+Total                                                  :  521115.25    2035.61      15.13      11.88    8737.34
+
+randread_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5904 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Could not open AIO device /dev/nvme8n1/dev/nvme9n1: Not a directory
+./perf: errors occured
+randread_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5929 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Could not open AIO device /dev/nvme8n1/dev/nvme9n1: Not a directory
+./perf: errors occured
+randread_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5942 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Could not open AIO device /dev/nvme8n1/dev/nvme9n1: Not a directory
+./perf: errors occured
+randread_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5955 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Could not open AIO device /dev/nvme8n1/dev/nvme9n1: Not a directory
+./perf: errors occured
+randread_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid5968 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Could not open AIO device /dev/nvme8n1/dev/nvme9n1: Not a directory
+./perf: errors occured
+./test_perf_aio.sh: line 15: 
+echo randread_1qd
+./perf /dev/nvme4n1 /dev/nvme5n1 /dev/nvme6n1 /dev/nvme7n1 /dev/nvme8n1 /dev/nvme9n1 /dev/nvme10n1 /dev/nvme11n1 -q 1 -s 4096 -w randread -t 300 -c 0xff
+
+echo randread_4qd
+./perf /dev/nvme4n1 /dev/nvme5n1 /dev/nvme6n1 /dev/nvme7n1 /dev/nvme8n1 /dev/nvme9n1 /dev/nvme10n1 /dev/nvme11n1 -q 4 -s 4096 -w randread -t 300 -c 0xff
+
+
+echo randread_16qd
+./perf /dev/nvme4n1 /dev/nvme5n1 /dev/nvme6n1 /dev/nvme7n1 /dev/nvme8n1 /dev/nvme9n1 /dev/nvme10n1 /dev/nvme11n1 -q 16 -s 4096 -w randread -t 300 -c 0xff
+
+
+echo randwrite_1qd
+./perf /dev/nvme4n1 /dev/nvme5n1 /dev/nvme6n1 /dev/nvme7n1 /dev/nvme8n1 /dev/nvme9n1 /dev/nvme10n1 /dev/nvme11n1 -q 1 -s 4096 -w randwrite -t 600 -c 0xff
+: No such file or directory
+randwrite_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid6392 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:  114620.88     447.74      34.63       9.35    8753.65
+/dev/nvme10n1                               from core 6:  119162.92     465.48      33.30       9.08    9083.81
+/dev/nvme9n1                                from core 5:  121107.93     473.08      32.76       9.06    8520.07
+/dev/nvme8n1                                from core 4:  120099.36     469.14      33.03       8.80    8779.30
+/dev/nvme7n1                                from core 3:  118327.30     462.22      33.54       8.93    9385.09
+/dev/nvme6n1                                from core 2:  123105.43     480.88      32.22       8.79    8648.07
+/dev/nvme5n1                                from core 1:  125797.68     491.40      31.53       8.57   10183.50
+/dev/nvme4n1                                from core 0:  121207.30     473.47      32.73       8.76    8671.38
+========================================================
+Total                                                  :  963428.88    3763.39      32.97       8.92    9003.11
+
+randwrite_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid6616 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:  115966.27     452.99     137.72      10.96   10142.18
+/dev/nvme10n1                               from core 6:  121769.57     475.66     131.15       9.98    9837.79
+/dev/nvme9n1                                from core 5:  121634.40     475.13     131.30      11.43    9714.06
+/dev/nvme8n1                                from core 4:  121484.79     474.55     131.46      12.00    8794.05
+/dev/nvme7n1                                from core 3:  123952.25     484.19     128.83      10.09    7815.16
+/dev/nvme6n1                                from core 2:  123545.49     482.60     129.25      11.15    8729.10
+/dev/nvme5n1                                from core 1:  126567.08     494.40     126.17      11.24    8751.89
+/dev/nvme4n1                                from core 0:  123231.88     481.37     129.59      10.94    9389.49
+========================================================
+Total                                                  :  978151.69    3820.91     130.68      10.97    9146.72
+
+randrw_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid6818 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:   18670.69      72.93      53.37      12.08    8785.32
+/dev/nvme10n1                               from core 6:   18621.64      72.74      53.50      11.89    7297.91
+/dev/nvme9n1                                from core 5:   18799.11      73.43      53.01      11.24    7793.07
+/dev/nvme8n1                                from core 4:   18667.55      72.92      53.38      12.10    8321.42
+/dev/nvme7n1                                from core 3:   17609.35      68.79      56.61      11.81    7631.43
+/dev/nvme6n1                                from core 2:   18777.39      73.35      53.07      11.15    8331.37
+/dev/nvme5n1                                from core 1:   18790.06      73.40      53.03      11.87    8656.88
+/dev/nvme4n1                                from core 0:   18839.64      73.59      52.89      11.91    8695.53
+========================================================
+Total                                                  :  148775.44     581.15      53.61      11.76    8189.12
+
+randrw_4qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid7022 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:   49124.55     191.89      81.23       8.43    8753.31
+/dev/nvme10n1                               from core 6:   48296.96     188.66      82.64       8.25    8499.79
+/dev/nvme9n1                                from core 5:   49384.30     192.91      80.80       8.38    8585.91
+/dev/nvme8n1                                from core 4:   49407.98     193.00      80.76       8.38    8322.38
+/dev/nvme7n1                                from core 3:   48021.04     187.58      83.10       8.44    7491.32
+/dev/nvme6n1                                from core 2:   49982.55     195.24      79.83       8.21    9281.39
+/dev/nvme5n1                                from core 1:   50168.29     195.97      79.55       8.42   11058.29
+/dev/nvme4n1                                from core 0:   50226.19     196.20      79.44       8.23    8782.43
+========================================================
+Total                                                  :  394611.88    1541.45      80.92       8.34    8846.86
+
+randrw_16qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0xff --file-prefix=spdk_pid7222 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:0e:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Associating /dev/nvme11n1 with lcore 7
+Associating /dev/nvme10n1 with lcore 6
+Associating /dev/nvme9n1 with lcore 5
+Associating /dev/nvme8n1 with lcore 4
+Associating /dev/nvme7n1 with lcore 3
+Associating /dev/nvme6n1 with lcore 2
+Associating /dev/nvme5n1 with lcore 1
+Associating /dev/nvme4n1 with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 7
+Starting thread on core 6
+Starting thread on core 5
+Starting thread on core 4
+Starting thread on core 3
+Starting thread on core 2
+Starting thread on core 1
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+/dev/nvme11n1                               from core 7:  109678.51     428.43     145.65       8.39   11299.03
+/dev/nvme10n1                               from core 6:  109681.14     428.44     145.65       8.24    9726.72
+/dev/nvme9n1                                from core 5:  111127.83     434.09     143.76       8.25   10320.15
+/dev/nvme8n1                                from core 4:  111199.30     434.37     143.66       8.23   10487.79
+/dev/nvme7n1                                from core 3:  106207.77     414.87     150.42       8.09   12131.80
+/dev/nvme6n1                                from core 2:  113653.23     443.96     140.55       8.08   10831.00
+/dev/nvme5n1                                from core 1:  114095.89     445.69     140.01       8.02   10965.77
+/dev/nvme4n1                                from core 0:  113622.64     443.84     140.60       8.09   10532.47
+========================================================
+Total                                                  :  889266.31    3473.70     143.79       8.17   10786.84
+

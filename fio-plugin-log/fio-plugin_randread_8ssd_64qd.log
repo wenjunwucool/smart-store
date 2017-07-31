@@ -1,0 +1,46 @@
+test: (g=0): rw=randread, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=spdk, iodepth=64
+fio-2.18
+Starting 1 thread
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: fio -c 0x1 -m 512 --file-prefix=spdk_pid14128 ]
+EAL: Probing VFIO support...
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+
+test: (groupid=0, jobs=1): err= 0: pid=14184: Tue Jul 11 11:19:54 2017
+   read: IOPS=678k, BW=2648MiB/s (2777MB/s)(776GiB/300001msec)
+    slat (usec): min=0, max=25, avg= 0.02, stdev= 0.14
+    clat (usec): min=22, max=39526, avg=94.02, stdev=72.19
+     lat (usec): min=22, max=39527, avg=94.04, stdev=72.19
+    clat percentiles (usec):
+     |  1.00th=[   67],  5.00th=[   72], 10.00th=[   76], 20.00th=[   79],
+     | 30.00th=[   80], 40.00th=[   85], 50.00th=[   90], 60.00th=[   95],
+     | 70.00th=[   96], 80.00th=[   99], 90.00th=[  109], 95.00th=[  120],
+     | 99.00th=[  149], 99.50th=[  185], 99.90th=[ 1320], 99.95th=[ 2128],
+     | 99.99th=[ 2800]
+    lat (usec) : 50=0.01%, 100=81.06%, 250=18.59%, 500=0.17%, 750=0.03%
+    lat (usec) : 1000=0.03%
+    lat (msec) : 2=0.06%, 4=0.06%, 10=0.01%, 20=0.01%, 50=0.01%
+  cpu          : usr=99.85%, sys=0.01%, ctx=90, majf=0, minf=65844
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwt: total=203372093,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=2648MiB/s (2777MB/s), 2648MiB/s-2648MiB/s (2777MB/s-2777MB/s), io=776GiB (833GB), run=300001-300001msec

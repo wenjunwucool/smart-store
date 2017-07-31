@@ -1,0 +1,47 @@
+test: (g=0): rw=randread, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=spdk, iodepth=16
+fio-2.18
+Starting 1 thread
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: fio -c 0x1 -m 512 --file-prefix=spdk_pid3132 ]
+EAL: Probing VFIO support...
+EAL: WARNING: Master core has no memory on local socket!
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+
+test: (groupid=0, jobs=1): err= 0: pid=3187: Wed Jul 12 14:44:42 2017
+   read: IOPS=102k, BW=400MiB/s (419MB/s)(234GiB/600001msec)
+    slat (usec): min=0, max=27, avg= 0.01, stdev= 0.11
+    clat (usec): min=21, max=39546, avg=62.71, stdev=60.80
+     lat (usec): min=21, max=39546, avg=62.73, stdev=60.80
+    clat percentiles (usec):
+     |  1.00th=[   33],  5.00th=[   34], 10.00th=[   34], 20.00th=[   34],
+     | 30.00th=[   35], 40.00th=[   36], 50.00th=[   61], 60.00th=[   74],
+     | 70.00th=[   79], 80.00th=[   88], 90.00th=[   96], 95.00th=[   98],
+     | 99.00th=[  120], 99.50th=[  126], 99.90th=[  458], 99.95th=[ 1384],
+     | 99.99th=[ 2736]
+    lat (usec) : 50=45.09%, 100=50.43%, 250=4.30%, 500=0.08%, 750=0.02%
+    lat (usec) : 1000=0.02%
+    lat (msec) : 2=0.03%, 4=0.03%, 10=0.01%, 20=0.01%, 50=0.01%
+  cpu          : usr=99.86%, sys=0.01%, ctx=159, majf=0, minf=94437
+  IO depths    : 1=8.1%, 2=16.3%, 4=32.5%, 8=30.8%, 16=12.2%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=61439993,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+
+Run status group 0 (all jobs):
+   READ: bw=400MiB/s (419MB/s), 400MiB/s-400MiB/s (419MB/s-419MB/s), io=234GiB (252GB), run=600001-600001msec

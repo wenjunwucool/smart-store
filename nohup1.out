@@ -1,0 +1,97 @@
+randread_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid17431 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+./test_perf.sh: line 2: 17431 Killed                  ./perf -q 1 -s 4096 -w randread -t 300 -c 0x1 -r 'trtype:PCIe traddr:0000:83:00.0' -r 'trtype:PCIe traddr:0000:84:00.0' -r 'trtype:PCIe traddr:0000:85:00.0' -r 'trtype:PCIe traddr:0000:86:00.0' -r 'trtype:PCIe traddr:0000:87:00.0' -r 'trtype:PCIe traddr:0000:88:00.0' -r 'trtype:PCIe traddr:0000:89:00.0' -r 'trtype:PCIe traddr:0000:8a:00.0'
+./test_perf.sh: line 35: unexpected EOF while looking for matching `''
+./test_perf.sh: line 36: syntax error: unexpected end of file
+randrw_1qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_4qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_16qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_32qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_128qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_1qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_4qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_16qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_32qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_128qd
+-M must be specified to value from 0 to 100 for rw or randrw.
+randrw_1qd
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid17690 ]
+EAL: Detected 44 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme

@@ -1,0 +1,57 @@
+test: (g=0): rw=randrw, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=spdk, iodepth=1
+fio-2.18
+Starting 1 thread
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: fio -c 0x1 -m 512 --file-prefix=spdk_pid7624 ]
+EAL: Probing VFIO support...
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+
+test: (groupid=0, jobs=1): err= 0: pid=7671: Wed Jul 12 16:53:08 2017
+   read: IOPS=14.3k, BW=55.8MiB/s (58.5MB/s)(32.7GiB/600001msec)
+    slat (usec): min=0, max=3, avg= 0.02, stdev= 0.14
+    clat (usec): min=33, max=5313, avg=62.00, stdev=84.95
+     lat (usec): min=33, max=5313, avg=62.02, stdev=84.95
+    clat percentiles (usec):
+     |  1.00th=[   34],  5.00th=[   34], 10.00th=[   34], 20.00th=[   35],
+     | 30.00th=[   35], 40.00th=[   35], 50.00th=[   38], 60.00th=[   73],
+     | 70.00th=[   79], 80.00th=[   84], 90.00th=[   95], 95.00th=[   97],
+     | 99.00th=[   99], 99.50th=[  131], 99.90th=[ 1736], 99.95th=[ 2448],
+     | 99.99th=[ 2864]
+  write: IOPS=14.3k, BW=55.8MiB/s (58.5MB/s)(32.7GiB/600001msec)
+    slat (usec): min=0, max=15, avg= 0.03, stdev= 0.18
+    clat (usec): min=6, max=7585, avg= 7.19, stdev=10.04
+     lat (usec): min=6, max=7585, avg= 7.22, stdev=10.04
+    clat percentiles (usec):
+     |  1.00th=[    6],  5.00th=[    6], 10.00th=[    6], 20.00th=[    7],
+     | 30.00th=[    7], 40.00th=[    7], 50.00th=[    7], 60.00th=[    7],
+     | 70.00th=[    7], 80.00th=[    8], 90.00th=[    8], 95.00th=[    8],
+     | 99.00th=[    9], 99.50th=[   10], 99.90th=[   21], 99.95th=[   30],
+     | 99.99th=[   40]
+    lat (usec) : 10=49.49%, 20=0.44%, 50=25.29%, 100=24.36%, 250=0.29%
+    lat (usec) : 500=0.04%, 750=0.02%, 1000=0.01%
+    lat (msec) : 2=0.02%, 4=0.04%, 10=0.01%
+  cpu          : usr=99.86%, sys=0.01%, ctx=156, majf=0, minf=108226
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=8567470,8563365,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=55.8MiB/s (58.5MB/s), 55.8MiB/s-55.8MiB/s (58.5MB/s-58.5MB/s), io=32.7GiB (35.1GB), run=600001-600001msec
+  WRITE: bw=55.8MiB/s (58.5MB/s), 55.8MiB/s-55.8MiB/s (58.5MB/s-58.5MB/s), io=32.7GiB (35.8GB), run=600001-600001msec

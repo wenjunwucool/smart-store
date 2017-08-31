@@ -1,0 +1,328 @@
+ exit
+  886  ls
+  887  cd /home/fl
+  888  cd /home/
+  889  ls
+  890  cd
+  891  ls
+  892  vi fio-native-coldstream-1048576-8-randrw-basic.log
+  893  vim fio-native-coldstream-1048576-8-randrw-basic.log
+  894  cd waikiki
+  895  ls
+  896  cd spdk/
+  897  ls
+  898  cd ..
+  899  ls
+  900  cd ..
+  901  ls
+  902  cd waikiki
+  903  cd
+  904  ./loadmod.sh
+  905  cd waikiki
+  906  ls
+  907  cd spdk/
+  908  ls
+  909  make clean & make
+  910  cp /root/spdk/nvmf.conf .
+  911  cp /root/spdk/CONFIG .
+  912  make clean & make
+  913  ./scripts/setup.sh
+  914  systemctl stop firewalld.service
+  915  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  916  ls
+  917  cd ..
+  918  ls
+  919  cd spdk/
+  920  ls
+  921  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  922  ls
+  923  cd app/nvmf_tgt/
+  924  ls
+  925  make
+  926  cd ..
+  927  ls
+  928  cd ..
+  929  git clone ssh://wuwenzhx@az-sg-sw01.ch.intel.com:29418/spdk
+  930  rm -rf spdk
+  931  git clone ssh://wuwenzhx@az-sg-sw01.ch.intel.com:29418/spdk
+  932  ls
+  933  cd spdk/
+  934  ls
+  935      versionfile
+  936  cp /root/spdk/nvmf.conf .
+  937  cp /root/spdk/CONFIG .
+  938  make clean && make
+  939  ./scripts/setup.sh
+  940  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  941  ls
+  942  ifconfig ens787f0 192.168.3.11
+  943  ifconfig ens787f1 192.168.4.11
+  944  ifconfig
+  945  ls
+  946  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  947  clear
+  948  ls
+  949  cd app/
+  950  ls
+  951  cd ..
+  952  ifconfig ens787f0 up
+  953  ifconfig ens787f1 up
+  954  ifconfig ens787f0 192.168.3.11
+  955  ifconfig ens787f1 192.168.4.11
+  956  ./scripts/setup.sh
+  957  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  958  dnf install libmlx4
+  959  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  960  dnf install libmlx5
+  961  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  962  ifconfig ens787f0 192.168.3.11
+  963  ifconfig ens787f1 192.168.4.11
+  964  ./scripts/setup.sh
+  965  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  966  dnf install libmlx4
+  967  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  968  ls
+  969  ps -aux fio_testserver
+  970  ps -aux fio_testserver.py
+  971  ps | -aux fio_testserver.py
+  972  ps -aux |fio_testserver.py
+  973  ps -aux |fio_testserver
+  974  ps -aux
+  975  ./loadmod.sh
+  976  cd /home/yanlian/
+  977  ls
+  978  cd spdk
+  979  ./scripts/setup.sh
+  980  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+  981  ifconfig
+  982  ifconfig -a
+  983  ifconfig enp3s0f0 up
+  984  ifconfig enp3s0f1 up
+  985  ifconfig
+  986  dhclient enp3s0f1
+  
+  
+  
+  
+ 2053  ps -aux|grep run|grep -v grep|awk '{print $2}'|xargs kill -9
+ 2054  ps -aux|grep test|grep -v grep|awk '{print $2}'|xargs kill -9
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  987  ifconfig
+  988  exit
+  989  cd /home/yanlian/spdk
+  990  git log
+  991  cd ../spdk-noconfig/
+  992  git log
+  993  git pull
+  994  crontab -l
+  995  crontab -e
+  996  export EDITOR=vim
+  997  crontab -e
+  998  ls
+  999  cd waikiki
+ 1000  ls
+ 1001  cd waikiki
+ 1002  ls
+ 1003  cd app/
+ 1004  ls
+ 1005  cd ..
+ 1006  cd spdk/
+ 1007  ls
+ 1008  cd app/
+ 1009  ls
+ 1010  cd ..
+ 1011  ls
+ 1012  scp root@10.239.128.41:/home/loadmod.sh .
+ 1013  scp root@10.239.128.115:/home/loadmod.sh .
+ 1014  ifconfig ens787f0 up
+ 1015  ifconfig ens787f1 up
+ 1016  ifconfig ens787f0 192.168.3.11
+ 1017  ifconfig ens787f0 192.168.4.11
+ 1018  ./loadmod.sh
+ 1019  cd ~
+ 1020  cd waikiki
+ 1021  ls
+ 1022  cd spdk/
+ 1023  make clean && make
+ 1024  ./scripts/setup.sh
+ 1025  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1026  cd /home/
+ 1027  ls
+ 1028  ./loadmod.sh
+ 1029  ifconfig
+ 1030  ifconfig -a
+ 1031  ethtool -i ens787f0
+ 1032  lspci -nnn|grep Eth
+ 1033  ifconfig
+ 1034  ifconfig ens787f0 up
+ 1035  ifconfig ens787f1 up
+ 1036  ifconfig
+ 1037  ifconfig ens787f0 192.168.3.11
+ 1038  ifconfig ens787f1 192.168.3.11
+ 1039  ifconfig ens787f1 192.168.4.11
+ 1040  ifconfig
+ 1041  systemctl  stop firewalld.service
+ 1042  ls
+ 1043  cd ~
+ 1044  ls
+ 1045  cd waikiki
+ 1046  l;
+ 1047  ls
+ 1048  cd spdk/
+ 1049  ls
+ 1050  vim nvmf.conf
+ 1051  ls
+ 1052  cd /home
+ 1053  ls
+ 1054  cd storage/
+ 1055  ls
+ 1056  cd spdk
+ 1057  l
+ 1058  ls
+ 1059  vim nvmf.conf
+ 1060  ls
+ 1061  pwd
+ 1062  cd ~
+ 1063  l;s
+ 1064  ls
+ 1065  cd waikiki
+ 1066  l
+ 1067  cd spdk/
+ 1068  l
+ 1069  ls
+ 1070  vim nvmf.conf
+ 1071  ethtool -i ens787f0
+ 1072  vim nvmf.conf
+ 1073  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1074  ls
+ 1075  vim CONFIG
+ 1076  cd /home/
+ 1077  ls
+ 1078  cd storage/
+ 1079  ls
+ 1080  cd ..
+ 1081  ls
+ 1082  cd ..
+ 1083  l
+ 1084  cd ~
+ 1085  l;s
+ 1086  cd waikiki
+ 1087  ;s
+ 1088  ls
+ 1089  cd spdk/
+ 1090  ls
+ 1091  ./scripts/setup.sh
+ 1092  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1093  ls
+ 1094  make clean && make
+ 1095  ifconfig
+ 1096  ./scripts/setup.sh
+ 1097  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1098  ifconfig
+ 1099  ls
+ 1100  vim nvmf.conf
+ 1101  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1102  vim nvmf.conf
+ 1103  ethtool -i ens787f1
+ 1104  lspci -nnn|grep Eth
+ 1105  ifconfig
+ 1106  ethtool -i ens8787f0
+ 1107  ethtool -i ens787f0
+ 1108  vim nvmf.conf
+ 1109  ls
+ 1110  cd ..
+ 1111  ls
+ 1112  cd spdk/
+ 1113  ls
+ 1114  pwd
+ 1115  cd etc
+ 1116  cd spdk/
+ 1117  ls
+ 1118  vim nvmf.conf.in
+ 1119  cd ..
+ 1120  ls
+ 1121  cd ..
+ 1122  l
+ 1123  cd ~
+ 1124  ls
+ 1125  cd
+ 1126  ls
+ 1127  cd waikiki
+ 1128  ls
+ 1129  cd spdk/
+ 1130  ls
+ 1131  ./scripts/setup.sh
+ 1132  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1133  ps -aux|grep nvmf
+ 1134  ps -aux|grep fio
+ 1135  ls
+ 1136  pwd
+ 1137  ls
+ 1138  pwd
+ 1139  vim nvmf.conf
+ 1140  lspci -nnn|grep Non
+ 1141  ls
+ 1142  ifconfig
+ 1143  cd ..
+ 1144  ls
+ 1145  cd spdk/
+ 1146  ls
+ 1147  vim nvmf.conf
+ 1148  ls
+ 1149  ifconfig ens787f0 192.168.3.11
+ 1150  ifconfig ens787f1 192.168.4.11
+ 1151  ifconfig
+ 1152  ./app/nvmf_tgt/nvmf_tgt -c nvmf.conf
+ 1153  ps -aux|grep fio
+ 1154  ps -aux|grep nvmf
+ 1155  cd ~
+ 1156  ls
+ 1157  cd waikiki_log/
+ 1158  ls
+ 1159  cd nvme/
+ 1160  ls
+ 1161  rm -fr *.log
+ 1162  ll
+ 1163  cd ..
+ 1164  l
+ 1165  cd ..
+ 1166  l
+ 1167  cd waikiki/spdk/
+ 1168  ls
+ 1169  vim nvmf.conf
+ 1170  history
+[root@kernelnvmftarget spdk]#
+
+
+ 2053  ps -aux|grep run|grep -v grep|awk '{print $2}'|xargs kill -9
+ 2054  ps -aux|grep test|grep -v grep|awk '{print $2}'|xargs kill -9
+
+
+
+
+
+
+
+
+

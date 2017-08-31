@@ -1,0 +1,9 @@
+# Create your views here.
+#obj = Project.objects.get(name=project_name)
+from django.http import HttpResponse
+def upload_file(request):
+	if request.method == 'POST':
+	
+	else:
+		pass
+	return HttpResponse("Hello, world! Upload File.")

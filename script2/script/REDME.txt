@@ -1,0 +1,18 @@
+ 
+log.txt:
+	All test_case_log name record in log.txt and is sort by queue_depth.
+
+performance_reporter.py: 
+	performance_reporter.py will open log.txt get total_iops,total_latency from each
+
+log file,and use list.append method put total_iops into Total_iops,Total_lat,
+So Total_iops,Total_lat is Record the data order by log.txt. 
+
+You should changed log.txt and fio_performance_reporter.py line 190~205 if your test_case is not the the as mine.
+Also you should Changed the file upload_rw_method.py  
+
+
+when config is ok,run "python trend_api + log_file path" will upload max_iops to web choose different rw_method to see  
+run "python API1226.py + log_file path" will upload all test result to the web,in the web choose FilterCenter you can See the result.
+
+

@@ -1,0 +1,24 @@
+test: (g=0): rw=randrw, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=spdk, iodepth=64
+fio-2.18
+Starting 1 thread
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: fio -c 0x1 -m 512 --file-prefix=spdk_pid634 ]
+EAL: Probing VFIO support...
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+
+fio: terminating on signal 15

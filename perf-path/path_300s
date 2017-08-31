@@ -1,0 +1,1049 @@
+1
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid58646 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  219613.47     857.87     582.67      73.53    5312.63
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  218579.09     853.82     585.43      68.01    6058.19
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  218955.77     855.30     584.42      82.77    5896.69
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  220132.03     859.89     581.29      56.15    5305.27
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  217978.50     851.48     587.04      75.69    4126.64
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218760.56     854.53     584.95      84.33    4012.85
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  218813.05     854.74     584.79      78.44    5648.75
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  219942.47     859.15     581.80      65.89    5511.35
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  306751.50    1198.25     417.15      53.41    5828.94
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220854.08     862.71     579.40      50.78    5465.91
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221237.89     864.21     578.40      55.01    5716.18
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221834.91     866.54     576.82      46.15    5514.16
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  222010.28     867.23     576.35      50.54    6080.39
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  305649.12    1193.94     418.65      46.98    4222.88
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  302692.62    1182.39     422.73      57.71    5510.24
+========================================================
+Total                                                  : 3553805.50   13882.05     549.46      63.03    5347.41
+
+2
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid58752 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  219960.91     859.22     581.75      84.75    4094.38
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219715.47     858.26     582.41      79.24    3989.70
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219488.59     857.38     583.00      82.52    4084.48
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219839.14     858.75     582.07      53.24    5497.17
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218068.14     851.83     586.80      72.70    5000.36
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218481.52     853.44     585.70      82.28    4748.43
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219144.72     856.03     583.91      79.81    4268.07
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220256.91     860.38     580.97      79.49    6048.54
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  310088.56    1211.28     412.66      42.64    5594.37
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220766.42     862.37     579.64      57.60    5868.47
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221331.81     864.58     578.15      50.98    5773.37
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221743.27     866.18     577.06      46.30    5961.57
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  221961.14     867.04     576.48      52.10    5535.90
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  306153.75    1195.91     417.97      43.81    5413.69
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  304886.34    1190.96     419.69      52.52    5617.10
+========================================================
+Total                                                  : 3561886.75   13913.62     548.55      64.00    5166.37
+
+3
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid59069 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  220002.56     859.39     581.64      80.84    4629.87
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219776.67     858.50     582.24      80.05    4153.16
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219573.17     857.71     582.78      51.70    4827.20
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219314.09     856.70     583.46      73.07    5352.61
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218149.05     852.14     586.59      83.33    5218.76
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218557.95     853.74     585.49      84.94    4095.33
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219323.81     856.73     583.43      86.15    4278.80
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220348.23     860.74     580.72      82.10    5346.95
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  310362.81    1212.35     412.30      50.88    5871.64
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220884.98     862.83     579.33      46.51    5959.03
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221365.89     864.71     578.06      45.96    5397.48
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221719.70     866.09     577.12      59.06    5787.56
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  222052.41     867.39     576.25      62.65    5513.41
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  307014.09    1199.27     416.79      44.66    5869.42
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  306626.03    1197.76     417.31      55.06    4805.51
+========================================================
+Total                                                  : 3565071.50   13926.06     548.23      65.80    5140.45
+
+4
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid59510 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  220134.83     859.90     581.29      81.19    5887.53
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219887.09     858.93     581.95      87.12    4199.57
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219838.11     858.74     582.08      74.06    4107.99
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219425.92     857.13     583.16      74.40    5019.14
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218376.08     853.03     585.98      84.87    4281.55
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218706.45     854.32     585.09      78.78    5597.62
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219414.91     857.09     583.19      83.78    5928.65
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220459.98     861.17     580.43      71.98    5399.10
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  310354.25    1212.32     412.31      42.95    6043.11
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220913.14     862.94     579.25      53.53    5840.89
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221348.28     864.64     578.11      50.29    4823.11
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221748.80     866.21     577.05      58.78    4726.66
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  222070.53     867.46     576.20      56.65    5582.56
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  307828.41    1202.45     415.69      51.39    4621.51
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  306319.34    1196.56     417.73      45.04    5632.38
+========================================================
+Total                                                  : 3566826.25   13932.92     547.97      66.32    5179.42
+
+5
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid59602 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  219791.69     858.56     582.20      83.36    5486.78
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219578.67     857.73     582.77      75.47    4105.76
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219528.94     857.53     582.90      63.42    4017.40
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  218346.25     852.92     586.05      47.29    5196.88
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218251.20     852.54     586.31      85.72    4216.92
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218585.95     853.85     585.42      76.84    5127.28
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219321.05     856.72     583.44      80.01    5786.27
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220288.77     860.50     580.88      76.32    5713.36
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  310688.31    1213.63     411.86      47.13    5848.07
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220673.48     862.01     579.88      55.39    5243.59
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221080.05     863.59     578.81      51.98    6275.60
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221522.20     865.32     577.64      57.20    5280.37
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  221843.05     866.57     576.79      52.47    5002.05
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  306670.56    1197.93     417.26      49.79    5885.70
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  306362.53    1196.73     417.67      57.03    5744.19
+========================================================
+Total                                                  : 3562532.50   13916.14     548.66      63.96    5262.02
+
+6
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid59874 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  219958.50     859.21     581.75      82.19    4185.59
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219624.19     857.91     582.65      81.22    5776.90
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219474.86     857.32     583.04      66.08    4347.94
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219147.39     856.04     583.90      56.79    5413.71
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218104.95     851.97     586.71      77.47    4971.17
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218511.97     853.56     585.62      81.32    4451.59
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219167.28     856.12     583.85      83.50    4211.08
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220437.05     861.08     580.49      85.43    5754.69
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  309489.12    1208.94     413.46      52.28    5830.48
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220942.77     863.06     579.17      54.83    5622.77
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221342.73     864.62     578.12      53.34    5893.75
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221776.59     866.31     576.97      53.01    5279.65
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  221951.55     867.00     576.51      56.03    5755.54
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  308011.41    1203.17     415.44      50.50    3969.98
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  306861.38    1198.68     416.99      48.15    6400.56
+========================================================
+Total                                                  : 3564801.50   13925.01     548.31      65.48    5191.03
+
+7
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid60147 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  219923.78     859.08     581.85      81.82    4009.13
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219610.75     857.85     582.68      82.18    5100.21
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219501.47     857.43     582.97      84.77    4112.14
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219117.92     855.93     583.98      58.96    5634.90
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218237.20     852.49     586.35      71.73    5557.85
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218770.86     854.57     584.92      82.01    4894.08
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219251.62     856.45     583.62      68.70    5044.73
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220260.97     860.39     580.95      82.14    5910.42
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  310425.91    1212.60     412.21      51.65    5413.09
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220857.08     862.72     579.40      52.69    5872.31
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221318.78     864.53     578.19      52.87    5239.63
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221709.80     866.05     577.15      56.25    5479.20
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  221911.23     866.84     576.61      43.41    5320.77
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  305751.66    1194.34     418.52      41.13    4920.51
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  305150.09    1191.99     419.33      41.99    5409.99
+========================================================
+Total                                                  : 3561799.00   13913.28     548.58      63.49    5194.60
+
+8
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid60214 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  219855.72     858.81     582.03      80.22    5890.91
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219559.66     857.65     582.82      80.66    4743.53
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219615.20     857.87     582.67      84.44    5443.58
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  218597.77     853.90     585.37      55.09    5320.14
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218283.31     852.67     586.23      83.31    4132.83
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218703.00     854.31     585.10      75.87    5334.17
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219435.84     857.17     583.13      86.06    4998.47
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220395.52     860.92     580.60      82.99    5211.90
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  311102.47    1215.24     411.32      40.56    5857.74
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220714.19     862.16     579.77      54.60    5513.95
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221104.77     863.69     578.75      57.33    6005.73
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221512.94     865.28     577.66      57.39    5709.63
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  221751.12     866.22     577.03      53.96    5369.21
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  307858.09    1202.57     415.65      49.64    5912.99
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  305820.84    1194.61     418.41      50.86    5900.60
+========================================================
+Total                                                  : 3564310.25   13923.09     548.44      66.20    5423.02
+
+9
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid60475 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  220017.69     859.44     581.60      85.99    5865.18
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219693.69     858.18     582.46      79.85    3981.57
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219474.27     857.32     583.04      83.84    4200.88
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219798.56     858.59     582.17      47.10    5183.50
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218166.48     852.21     586.54      79.15    4058.04
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218503.06     853.53     585.64      75.82    5314.19
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219315.52     856.70     583.45      83.52    4888.66
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220314.67     860.60     580.81      72.09    5302.98
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  309713.09    1209.82     413.16      47.12    5835.00
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220838.41     862.65     579.45      49.78    5144.76
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221312.59     864.50     578.20      47.90    6311.02
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221743.08     866.18     577.06      64.24    5475.92
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  221997.89     867.18     576.39      47.69    4320.89
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  307278.31    1200.31     416.44      50.68    4977.82
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  305870.50    1194.81     418.34      54.63    5387.39
+========================================================
+Total                                                  : 3564037.75   13922.02     548.32      64.63    5083.19
+
+10
+Starting DPDK 17.05.0 initialization...
+[ DPDK EAL parameters: perf -c 0x1 --file-prefix=spdk_pid60917 ]
+EAL: Detected 88 lcore(s)
+EAL: No free hugepages reported in hugepages-1048576kB
+EAL: Probing VFIO support...
+Initializing NVMe Controllers
+EAL: PCI device 0000:83:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:83:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:83:00.0 [8086:0953]
+EAL: PCI device 0000:84:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:84:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:84:00.0 [8086:0953]
+EAL: PCI device 0000:85:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:85:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:85:00.0 [8086:0953]
+EAL: PCI device 0000:86:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:86:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:86:00.0 [8086:0953]
+EAL: PCI device 0000:87:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:87:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:87:00.0 [8086:0953]
+EAL: PCI device 0000:88:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:88:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:88:00.0 [8086:0953]
+EAL: PCI device 0000:89:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:89:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:89:00.0 [8086:0953]
+EAL: PCI device 0000:8a:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8a:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8a:00.0 [8086:0953]
+EAL: PCI device 0000:11:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:11:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:11:00.0 [8086:0953]
+EAL: PCI device 0000:8b:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8b:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8b:00.0 [8086:0953]
+EAL: PCI device 0000:8c:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8c:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8c:00.0 [8086:0953]
+EAL: PCI device 0000:8d:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8d:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8d:00.0 [8086:0953]
+EAL: PCI device 0000:8e:00.0 on NUMA socket 1
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:8e:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:8e:00.0 [8086:0953]
+EAL: PCI device 0000:0f:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:0f:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:0f:00.0 [8086:0953]
+EAL: PCI device 0000:10:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:953 spdk_nvme
+Attaching to NVMe Controller at 0000:10:00.0 [8086:0953]
+Attached to NVMe Controller at 0000:10:00.0 [8086:0953]
+Associating INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) with lcore 0
+Associating INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) with lcore 0
+Initialization complete. Launching workers.
+Starting thread on core 0
+========================================================
+                                                                                            Latency(us)
+Device Information                                     :       IOPS       MB/s    Average        min        max
+INTEL SSDPE2MD016T4  (PHFT648000111P6JGN  ) from core 0:  220053.08     859.58     581.50      79.53    5384.25
+INTEL SSDPE2MD016T4  (PHFT6054007S1P6JGN  ) from core 0:  219686.55     858.15     582.48      84.00    5503.37
+INTEL SSDPE2MD016T4  (PHFT605400A01P6JGN  ) from core 0:  219506.98     857.45     582.95      64.64    5117.00
+INTEL SSDPE2MD800G4  (PHFT6393000N800HGN  ) from core 0:  219672.12     858.09     582.51      77.35    5200.44
+INTEL SSDPE2MD016T4  (PHFT6054009Y1P6JGN  ) from core 0:  218001.58     851.57     586.98      83.02    5222.19
+INTEL SSDPE2MD016T4  (PHFT6054006V1P6JGN  ) from core 0:  218414.95     853.18     585.88      80.66    5533.01
+INTEL SSDPE2MD016T4  (PHFT605400951P6JGN  ) from core 0:  219152.31     856.06     583.89      81.06    4131.94
+INTEL SSDPE2MD016T4  (CVFT650400671P6JGN  ) from core 0:  220178.77     860.07     581.17      62.32    4283.03
+INTEL SSDPE2MD016T4  (PHFT6054004D1P6JGN  ) from core 0:  309614.81    1209.43     413.29      48.48    6465.20
+INTEL SSDPE2MD016T4  (PHFT6480002G1P6JGN  ) from core 0:  220811.77     862.55     579.52      48.32    5934.49
+INTEL SSDPE2MD016T4  (CVFT650600AQ1P6JGN  ) from core 0:  221317.05     864.52     578.19      51.56    5191.14
+INTEL SSDPE2MD016T4  (PHFT6054004Y1P6JGN  ) from core 0:  221790.88     866.37     576.94      55.65    5835.40
+INTEL SSDPE2MD016T4  (PHFT605400911P6JGN  ) from core 0:  222041.86     867.35     576.27      53.13    5222.36
+INTEL SSDPE2MD016T4  (PHFT6054007P1P6JGN  ) from core 0:  306486.97    1197.21     417.51      45.19    6185.91
+INTEL SSDPE2MD016T4  (PHFT6054006J1P6JGN  ) from core 0:  304949.50    1191.21     419.61      52.21    5339.74
+========================================================
+Total                                                  : 3561679.25   13912.81     548.58      64.48    5369.97

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*- 
-from API import *
+from API1226 import *
 from upload_rw_method import *
 
 def Draw_QueueDepth_Chart():

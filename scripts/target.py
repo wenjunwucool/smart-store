@@ -2,9 +2,9 @@ import time
 import os
 import sys
 import re
+from subprocess import call,check_output,check_call
 
-
-class Start_target:
+#class Start_target:
 
 def get_ports(ethname,drivername):
     output = check_output("lspci -nn|grep Mellanox", shell=True)
@@ -62,67 +62,46 @@ def set_up():
     port = ethname[0].split('\n')
     driver = "mlx4_en"
     if driver in drivername:
-        check_call("ifconfig %s192.168.3.11" % port[0],shell=True)
+        check_call("ifconfig %s 192.168.3.11" % port[0],shell=True)
         check_call("modprobe mlx4_ib", shell=True)
-    else:
-        driver = "mlx5_core"
-        if driver in drivername:
-            check_call("ifconfig %s 192.168.3.11" % port[0],shell=True)
-            check_call("modprobe mlx5_ib", shell=True)
-        else:
-            print "Cannot find mellanox nic"
+    #else:
+    #    driver = "mlx5_core"
+    #    if driver in drivername:
+    #        check_call("ifconfig %s 192.168.3.11" % port[0],shell=True)
+    #        check_call("modprobe mlx5_ib", shell=True)
+    #    else:
+    #        print "Cannot find mellanox nic"
     spdk_path = "/root/spdk"
     dpdk_path = "/root/spdk/dpdk"
     spdk_gitURL = r"https://github.com/spdk/spdk.git"
     dpdk_gitURL = r"https://github.com/spdk/dpdk.git"
     if os.path.exists("%s" % spdk_path) is True:
         ret = os.system("cd %s && git pull" % spdk_path)
-    else:
-        print "git clone %s" % spdk_gitURL
-        ret = os.system("git clone %s" % spdk_gitURL)
-        if ret is not 0:
-            print "Clone spdk failed!!!"
-            raise EnvironmentError
-    if os.path.exists("%s" % dpdk_path) is True:
-        ret = os.system("cd %s && git pull" % dpdk_path)
-        if ret is not 0:
-            ret = os.system("rm -rf %s" % dpdk_path)
-            print "git clone %s" % dpdk_gitURL
-            ret = os.system("git clone %s" % dpdk_gitURL)
-            if ret is not 0:
-                print "Clone dpdk failed!!!"
-                raise EnvironmentError
-    else:
-        print "git clone %s" % dpdk_gitURL
-        ret = os.system("git clone %s" % dpdk_gitURL)
-        if ret is not 0:
-            print "Clone dpdk failed!!!"
-            raise EnvironmentError
-    check_call("modprobe ib_addr", shell=True)
-    check_call("modprobe ib_cm", shell=True)
-    check_call("modprobe ib_core", shell=True)
-    check_call("modprobe ib_mad", shell=True)
-    check_call("modprobe ib_sa", shell=True)
-    check_call("modprobe ib_ucm", shell=True)
-    check_call("modprobe ib_umad", shell=True)
-    check_call("modprobe ib_uverbs", shell=True)
-    check_call("modprobe iw_cm", shell=True)
-    check_call("modprobe rdma_cm", shell=True)
-    check_call("modprobe rdma_ucm", shell=True)
+    call("modprobe ib_addr", shell=True)
+    call("modprobe ib_cm", shell=True)
+    call("modprobe ib_core", shell=True)
+    call("modprobe ib_mad", shell=True)
+    #check_call("modprobe ib_sa", shell=True)
+    #check_call("modprobe ib_ucm", shell=True)
+    #check_call("modprobe ib_umad", shell=True)
+    #check_call("modprobe ib_uverbs", shell=True)
+    #check_call("modprobe iw_cm", shell=True)
+    #check_call("modprobe rdma_cm", shell=True)
+    #check_call("modprobe rdma_ucm", shell=True)
     check_call("NRHUGE=12288 %s/scripts/setup.sh" % spdk_path, shell=True)
-    check_call("make clean", shell=True)
-    check_call("./configure --with-rdma", shell=True)
-    check_call("make -j", shell=True)
-    nvmf_config_path = %s + '/etc/spdk/nvmf.conf.in'
-    nvmf_tgt_file = %s + '/nvmf.conf'
-    check_call('sed -i "s/  AIO/#  AIO/" %s' % nvmf_config_path, shell=True)
-    check_call('sed -i "s/#MaxQueueDepth 128/MaxQueueDepth 1024/" %s' % nvmf_config_path, shell=True)
-    check_call('sed -i "s/#MaxIOSize 131072/MaxIOSize 131072/" %s' % nvmf_config_path, shell=True)
-    check_call("rm -rf %s && cp %s %s " % (nvmf_tgt_file, nvmf_config_path, nvmf_tgt_file), shell=True)
+    call("make clean", shell=True)
+    call("./configure --with-rdma", shell=True)
+    call("make -j", shell=True)
+    nvmf_config_path = '/roo/spdk/etc/spdk/nvmf.conf.in'
+    nvmf_tgt_file = '/root/spdk/nvmf.conf'
+    call('sed -i "s/  AIO/#  AIO/" %s' % nvmf_config_path, shell=True)
+    call('sed -i "s/#MaxQueueDepth 128/MaxQueueDepth 1024/" %s' % nvmf_config_path, shell=True)
+    call('sed -i "s/#MaxIOSize 131072/MaxIOSize 131072/" %s' % nvmf_config_path, shell=True)
+    call("rm -rf %s && cp %s %s " % (nvmf_tgt_file, nvmf_config_path, nvmf_tgt_file), shell=True)
     generate_nvmf_tgt_file(nvmf_tgt_file)
     cmd = "./app/nvmf_tgt/nvmf_tgt -c nvmf.conf"
     out = Popen(cmd, shell=True)
     rc = out.wait()
     if rc != 0:
         print "start to run nvmf_tgt failed"
-
+set_up()
